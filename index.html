@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <aside class="aside-main">
+        <button type="button" id="btnBurger" class="btn btn-burger">
+          <span class="ico-chevron-right"></span>
+        </button>
+
+        <div class="aside-main__content">
+          <div class="main-logo">
+            <img
+              src="assets/images/icons/setting.svg"
+              alt="logo"
+              class="main-logo__icon"
+            />
+            <span class="main-logo__text"> Dashboard </span>
+            <span class="main-logo__subtext"> v.01 </span>
+          </div>
+
+          <nav class="main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__list__item">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-white-indigo btn-md is-full is-btn-content-left is-chevron-right"
+                >
+                  <span class="ico-key-square"></span>
+                  Dashboard
+                </a>
+              </li>
+              <li class="main-navigation__list__item">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-white-indigo btn-md is-full is-btn-content-left is-chevron-right"
+                >
+                  <span class="ico-d-square"></span>
+                  Product
+                </a>
+              </li>
+              <li class="main-navigation__list__item">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-white-indigo btn-md is-full is-btn-content-left is-chevron-right"
+                >
+                  <span class="ico-user-square"></span>
+                  Customers
+                </a>
+              </li>
+              <li class="main-navigation__list__item">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-white-indigo btn-md is-full is-btn-content-left is-chevron-right"
+                >
+                  <span class="ico-wallet-money"></span>
+                  Income
+                </a>
+              </li>
+              <li class="main-navigation__list__item">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-white-indigo btn-md is-full is-btn-content-left is-chevron-right"
+                >
+                  <span class="ico-discount-shape"></span>
+                  Promote
+                </a>
+              </li>
+              <li class="main-navigation__list__item">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-white-indigo btn-md is-full is-btn-content-left is-chevron-right"
+                >
+                  <span class="ico-message-question"></span>
+                  Help
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="avatar">
+            <img
+              src="assets/images/avatar.png"
+              alt="avatar"
+              class="avatar__img"
+            />
+            <div class="avatar__inner">
+              <div class="avatar__title">Evano</div>
+              <div class="avatar__subtitle">Project Manager</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <h1 class="title-main title-2">Hello Evano 👋🏼,</h1>
+
+        <div class="table-main-wrap">
+          <table class="table-main">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-th="Customer Name">
+                  <div class="table-main__td">Jane Cooper</div>
+                </td>
+                <td data-th="Company">
+                  <div class="table-main__td">Microsoft</div>
+                </td>
+                <td data-th="Phone Number">
+                  <div class="table-main__td">(225) 555-0118</div>
+                </td>
+                <td data-th="Email">
+                  <div class="table-main__td">jane@microsoft.com</div>
+                </td>
+                <td data-th="Country">
+                  <div class="table-main__td">United States</div>
+                </td>
+                <td data-th="Status">
+                  <div class="table-main__td">
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm is-bordered"
+                    >
+                      Active
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td data-th="Customer Name">
+                  <div class="table-main__td">Jane Cooper</div>
+                </td>
+                <td data-th="Company">
+                  <div class="table-main__td">Microsoft</div>
+                </td>
+                <td data-th="Phone Number">
+                  <div class="table-main__td">(225) 555-0118</div>
+                </td>
+                <td data-th="Email">
+                  <div class="table-main__td">jane@microsoft.com</div>
+                </td>
+                <td data-th="Country">
+                  <div class="table-main__td">United States</div>
+                </td>
+                <td data-th="Status">
+                  <div class="table-main__td">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm is-bordered"
+                    >
+                      Active
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script src="assets/js/common.js"></script>
+</html>
