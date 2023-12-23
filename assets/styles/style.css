@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 1 version
+*/
+
 @import "reset-default.css";
 
 /*
@@ -62,6 +69,22 @@
   background-color: color-mix(in srgb, var(--indigo-600) 70%, transparent);
 }
 
+::-webkit-input-placeholder {
+  color: var(--gray-400);
+}
+
+::-moz-placeholder {
+  color: var(--gray-400);
+}
+
+:-ms-input-placeholder {
+  color: var(--gray-400);
+}
+
+::-ms-input-placeholder {
+  color: var(--gray-400);
+}
+
 ::placeholder {
   color: var(--gray-400);
 }
@@ -69,6 +92,34 @@
 input[placeholder] {
   text-overflow: ellipsis;
   caret-color: var(--indigo-600);
+}
+
+input:focus::-webkit-input-placeholder {
+  text-indent: 1em;
+  -webkit-transition: text-indent var(--transition), color var(--transition);
+  transition: text-indent var(--transition), color var(--transition);
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  text-indent: 1em;
+  -moz-transition: text-indent var(--transition), color var(--transition);
+  transition: text-indent var(--transition), color var(--transition);
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  text-indent: 1em;
+  -ms-transition: text-indent var(--transition), color var(--transition);
+  transition: text-indent var(--transition), color var(--transition);
+  color: transparent;
+}
+
+input:focus::-ms-input-placeholder {
+  text-indent: 1em;
+  -ms-transition: text-indent var(--transition), color var(--transition);
+  transition: text-indent var(--transition), color var(--transition);
+  color: transparent;
 }
 
 input:focus::placeholder {
@@ -295,7 +346,8 @@ h6,
   position: absolute;
   top: 50%;
   right: 8px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-family: "ico" !important;
   transition: right var(--transition);
 }
@@ -336,11 +388,14 @@ h6,
 
 .btn-burger [class*="ico"] {
   margin: 0;
+  transition: -webkit-transform var(--transition);
   transition: transform var(--transition);
+  transition: transform var(--transition), -webkit-transform var(--transition);
 }
 
 .btn-burger.is-active [class*="ico"] {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 /* forms */
@@ -637,12 +692,16 @@ h6,
     position: fixed;
     z-index: 9;
     box-shadow: 0px 10px 11px 0px rgba(var(--neutral-200--rgb), 0.5);
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    transition: -webkit-transform var(--transition);
     transition: transform var(--transition);
+    transition: transform var(--transition), -webkit-transform var(--transition);
   }
 
   .aside-main.is-active {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   .aside-main .aside-main__content {
