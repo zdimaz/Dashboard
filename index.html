@@ -2,18 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" />
     <title>Dashboard</title>
+    <meta name="theme-color" content="#4285f4" />
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
     <div class="main-container">
-      <aside class="aside-main">
-        <button type="button" id="btnBurger" class="btn btn-burger">
-          <span class="ico-chevron-right"></span>
-        </button>
+
+      <button type="button" id="btnBurger" class="btn btn-burger">
+        <span class="ico-chevron-right"></span>
+      </button>
+
+      <aside class="aside-main" id="mainAside">
 
         <div class="aside-main__content">
+
           <div class="main-logo">
             <img
               src="assets/images/icons/setting.svg"
@@ -47,7 +51,7 @@
               <li class="main-navigation__list__item">
                 <a
                   href="javascript:void(0)"
-                  class="btn btn-white-indigo btn-md is-full is-btn-content-left is-chevron-right"
+                  class="btn btn-white-indigo btn-md is-full is-btn-content-left is-chevron-right is-active"
                 >
                   <span class="ico-user-square"></span>
                   Customers
@@ -94,13 +98,34 @@
               <div class="avatar__subtitle">Project Manager</div>
             </div>
           </div>
+
         </div>
+
       </aside>
 
       <main class="main-content">
+
         <h1 class="title-main title-2">Hello Evano 👋🏼,</h1>
 
         <div class="table-main-wrap">
+
+          <div class="table-main__actions-top">
+
+            <div class="table-main__typography-box">
+
+              <h2 class="title-3 weight-semi-bold table-main__title">
+                All Customers
+              </h2>
+              <h3 class="title-5 weight-regular table-main__subtitle">
+                Active Members
+              </h3>
+
+            </div>
+
+            <input type="text" class="input-field input-field-search" placeholder="Search">
+
+          </div>
+
           <table class="table-main">
             <thead>
               <tr>
@@ -113,6 +138,7 @@
               </tr>
             </thead>
             <tbody>
+
               <tr>
                 <td data-th="Customer Name">
                   <div class="table-main__td">Jane Cooper</div>
@@ -140,21 +166,22 @@
                   </div>
                 </td>
               </tr>
+
               <tr>
                 <td data-th="Customer Name">
-                  <div class="table-main__td">Jane Cooper</div>
+                  <div class="table-main__td">Floyd Miles</div>
                 </td>
                 <td data-th="Company">
-                  <div class="table-main__td">Microsoft</div>
+                  <div class="table-main__td">Yahoo</div>
                 </td>
                 <td data-th="Phone Number">
-                  <div class="table-main__td">(225) 555-0118</div>
+                  <div class="table-main__td">(205) 555-0100</div>
                 </td>
                 <td data-th="Email">
-                  <div class="table-main__td">jane@microsoft.com</div>
+                  <div class="table-main__td">floyd@yahoo.com</div>
                 </td>
                 <td data-th="Country">
-                  <div class="table-main__td">United States</div>
+                  <div class="table-main__td">Kiribati</div>
                 </td>
                 <td data-th="Status">
                   <div class="table-main__td">
@@ -162,13 +189,217 @@
                       type="button"
                       class="btn btn-danger btn-sm is-bordered"
                     >
+                      Inactive
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-th="Customer Name">
+                  <div class="table-main__td">Ronald Richards</div>
+                </td>
+                <td data-th="Company">
+                  <div class="table-main__td">Adobe</div>
+                </td>
+                <td data-th="Phone Number">
+                  <div class="table-main__td">(302) 555-0107</div>
+                </td>
+                <td data-th="Email">
+                  <div class="table-main__td">ronald@adobe.com</div>
+                </td>
+                <td data-th="Country">
+                  <div class="table-main__td">Israel</div>
+                </td>
+                <td data-th="Status">
+                  <div class="table-main__td">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm is-bordered"
+                    >
+                      Inactive
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-th="Customer Name">
+                  <div class="table-main__td">Marvin McKinney</div>
+                </td>
+                <td data-th="Company">
+                  <div class="table-main__td">Tesla</div>
+                </td>
+                <td data-th="Phone Number">
+                  <div class="table-main__td">(252) 555-0126</div>
+                </td>
+                <td data-th="Email">
+                  <div class="table-main__td">marvin@tesla.com</div>
+                </td>
+                <td data-th="Country">
+                  <div class="table-main__td">Iran</div>
+                </td>
+                <td data-th="Status">
+                  <div class="table-main__td">
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm is-bordered"
+                    >
                       Active
                     </button>
                   </div>
                 </td>
               </tr>
+
+              <tr>
+                <td data-th="Customer Name">
+                  <div class="table-main__td">Jerome Bell</div>
+                </td>
+                <td data-th="Company">
+                  <div class="table-main__td">Google</div>
+                </td>
+                <td data-th="Phone Number">
+                  <div class="table-main__td">(629) 555-0129</div>
+                </td>
+                <td data-th="Email">
+                  <div class="table-main__td">jerome@google.com</div>
+                </td>
+                <td data-th="Country">
+                  <div class="table-main__td">Réunion</div>
+                </td>
+                <td data-th="Status">
+                  <div class="table-main__td">
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm is-bordered"
+                    >
+                      Active
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-th="Customer Name">
+                  <div class="table-main__td">Kathryn Murphy</div>
+                </td>
+                <td data-th="Company">
+                  <div class="table-main__td">Microsoft</div>
+                </td>
+                <td data-th="Phone Number">
+                  <div class="table-main__td">(406) 555-0120</div>
+                </td>
+                <td data-th="Email">
+                  <div class="table-main__td">kathryn@microsoft.com</div>
+                </td>
+                <td data-th="Country">
+                  <div class="table-main__td">Curaçao</div>
+                </td>
+                <td data-th="Status">
+                  <div class="table-main__td">
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm is-bordered"
+                    >
+                      Active
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-th="Customer Name">
+                  <div class="table-main__td">Jacob Jones</div>
+                </td>
+                <td data-th="Company">
+                  <div class="table-main__td">Yahoo</div>
+                </td>
+                <td data-th="Phone Number">
+                  <div class="table-main__td">(208) 555-0112</div>
+                </td>
+                <td data-th="Email">
+                  <div class="table-main__td">jacob@yahoo.com</div>
+                </td>
+                <td data-th="Country">
+                  <div class="table-main__td">Brazil</div>
+                </td>
+                <td data-th="Status">
+                  <div class="table-main__td">
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm is-bordered"
+                    >
+                      Active
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-th="Customer Name">
+                  <div class="table-main__td">Kristin Watson</div>
+                </td>
+                <td data-th="Company">
+                  <div class="table-main__td">Facebook</div>
+                </td>
+                <td data-th="Phone Number">
+                  <div class="table-main__td">(704) 555-0127</div>
+                </td>
+                <td data-th="Email">
+                  <div class="table-main__td">kristin@facebook.com</div>
+                </td>
+                <td data-th="Country">
+                  <div class="table-main__td">Åland Islands</div>
+                </td>
+                <td data-th="Status">
+                  <div class="table-main__td">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-sm is-bordered"
+                    >
+                      Inactive
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
             </tbody>
           </table>
+
+          <div class="table-main__actions-bottom">
+
+            <div class="table-main__typography-box">
+              <p>
+                Showing data 1 to 8 of  256K entries
+              </p>
+            </div>
+
+            <div class="pagination">
+              <a href="javascript:void(0)" class="pagination__link">
+                <
+              </a>
+              <a href="javascript:void(0)" class="pagination__link active">
+                1
+              </a>
+              <a href="javascript:void(0)" class="pagination__link">2</a>
+              <a href="javascript:void(0)" class="pagination__link">
+                3
+              </a>
+              <a href="javascript:void(0)" class="pagination__link">
+                4
+              </a>
+              <a href="javascript:void(0)" class="pagination__link-more">
+                ...
+              </a>
+              <a href="javascript:void(0)" class="pagination__link">
+               40
+              </a>
+              <a href="javascript:void(0)" class="pagination__link">
+                >
+              </a>
+            </div>
+
+          </div>
         </div>
       </main>
     </div>
